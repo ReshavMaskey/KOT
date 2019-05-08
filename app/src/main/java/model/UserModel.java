@@ -6,7 +6,19 @@ public class UserModel {
     private String userpassword;
     private String usertype;
 
-    public static String tableName = "tblUser";
+
+    //Table information
+    public static String UTABLE_NAME = "tblUser";
+    public static final String UID = "uid";
+    public static final String UNAME = "uname";
+    public static final String UPASSWORD = "upassword";
+    public static final String UTYPE = "utype";
+
+
+
+
+    public UserModel() {
+    }
 
     public UserModel(int userID, String username, String userpassword, String usertype) {
         this.userID = userID;
@@ -32,6 +44,6 @@ public class UserModel {
     }
 
     public static String getTableNames() {
-        return tableName;
+        return UTABLE_NAME;
     }
 }
