@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/item2"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Add" />
+        <item
+            android:id="@+id/item3"
+            android:icon="@android:drawable/btn_default"
+            android:title="Update" />
+            <item
+            android:id="@+id/item4"
+            android:icon="@android:drawable/ic_delete"
+            android:title="Delete" />
+
+    </group>
+
+    <item android:title="Order Detail">
+        <menu>
+            <item
+
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="SHARE" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="SEND" />
+        </menu>
+    </item>
+
+</menu>

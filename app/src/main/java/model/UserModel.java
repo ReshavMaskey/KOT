@@ -1,5 +1,8 @@
 package model;
 
+import android.content.Context;
+import android.widget.ArrayAdapter;
+
 public class UserModel {
     private int userID;
     private String username;
@@ -13,9 +16,17 @@ public class UserModel {
     public static final String UNAME = "uname";
     public static final String UPASSWORD = "upassword";
     public static final String UTYPE = "utype";
+    ///////////////////////
+
+    public static final String[] USER_TYPE_DATA = {"--Select User Type--","admin", "staff"};
 
 
 
+    public static ArrayAdapter SET_USERTYPE_ARRAYADAPTER(Context context){
+        ArrayAdapter adapter= new ArrayAdapter<>(context,android.R.layout.simple_list_item_1,UserModel.USER_TYPE_DATA);
+        return adapter;
+
+    }
 
     public UserModel() {
     }
@@ -46,4 +57,6 @@ public class UserModel {
     public static String getTableNames() {
         return UTABLE_NAME;
     }
+
+
 }

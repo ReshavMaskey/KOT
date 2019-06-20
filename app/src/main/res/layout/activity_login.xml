@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grdnt">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/grdnt"
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +31,7 @@
                     android:src="@drawable/usrusr" />
 
                 <EditText
-                    android:id="@+id/usrusr"
+                    android:id="@+id/txtUsernameL"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -60,7 +62,7 @@
                     android:src="@drawable/pswd" />
 
                 <EditText
-                    android:id="@+id/pswrdd"
+                    android:id="@+id/txtPasswordL"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -92,10 +94,9 @@
                     android:src="@drawable/arrow" />
 
                 <Spinner
-                    android:id="@+id/cmbUserType"
+                    android:id="@+id/cmbUserTypeL"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="select user type"
                     android:letterSpacing="0.1"
                     android:textColor="#fff"
                     android:textColorHint="#d9e5f3"
@@ -134,7 +135,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/sup"
+            android:id="@+id/tvSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

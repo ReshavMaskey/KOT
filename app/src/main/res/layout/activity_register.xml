@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:background="@drawable/grdnt"
         android:gravity="center"
         android:orientation="vertical">
@@ -69,11 +69,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff">
+
             <Spinner
-                android:id="@+id/cmbSelectUserType"
-                android:layout_margin="20dp"
+                android:id="@+id/cmbUserTypeR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:hint="select user type"
                 android:letterSpacing="0.1"
                 android:textColor="#fff"
@@ -82,14 +83,13 @@
         </android.support.design.widget.TextInputLayout>
 
 
-
         <LinearLayout
-            android:layout_margin="40dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
